@@ -1,0 +1,87 @@
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-style: normal;
+	src: url("../fonts/opensanslight.woff") format("woff"),
+		 url("../fonts/opensanslight.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-style: normal;
+	src: url("../fonts/opensans.woff") format("woff"),
+		 url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-style: normal;
+	src: url("../fonts/opensansbold.woff") format("woff"),
+		 url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	font-style: normal;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+img {
+	max-width: 100%; 
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.button {
+	display: inline-block;
+	padding: 15px 35px;
+
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;	
+	color: #ffffff;
+
+	border: 3px solid #ffffff;
+	border-radius: 40px;
+
+	&:hover,
+	&:focus {
+		background-color: #ffffff;
+		color: #d22856;
+	}
+
+	&:active {
+		color: rgba(210, 40, 86, 0.3);
+	}
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Pink - приложение для фото</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="page-header">
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<div class="main-nav__wrapper">
+				<div class="main-nav__wrapper-header">
+					<a class="main-nav__logo" href="index.html">
+						<picture>
+							<source media="(min-width:1080px)" srcset="img/logo-pink-white-desktop.svg">
+							<source media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
+							<img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" 
+								alt="Логотип сайта - Pink">
+						</picture>
+					</a>
+					<button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+				</div>
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item site-list__item--active">
+						<a>Главная</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#photo">Фотографии</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#competition">Конкурс</a>
+					</li>
+					<li class="site-list__item">
+						<a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="application">
+			<p class="application__slogan">Взгляните на жизнь иначе!</p>
+			<div class="application__wrapper-devices">
+				<a class="application__download button" href="#download">Скачать приложение</a>
+				<ul class="application__devices devices-list">
+					<li class="devices-list__item">
+						<a href="#apple"><img src="img/logo-apple.svg" alt="Apple"></a>
+					</li>
+					<li class="devices-list__item">
+						<a href="#android"><img src="img/logo-android.svg" alt="Android"></a>
+					</li>
+					<li class="devices-list__item">
+						<a href="#microsoft"><img src="img/logo-microsoft.svg" alt="Microsoft"></a>
+					</li>
+				</ul>
+				<p class="application__devices-text">
+					Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+				</p>
+			</div>
+		</section>
+	</header>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

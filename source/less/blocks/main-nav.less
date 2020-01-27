@@ -1,0 +1,161 @@
+.main-nav {
+	width: auto;
+}
+
+.main-nav__wrapper {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.main-nav__wrapper-header {
+	padding: 22px 20px;
+
+	background-color: #283645;
+	border-bottom: 1px solid #000000;
+}
+
+.main-nav__toggle {
+	position: absolute;
+	top: 22px;
+	right: 20px;
+	z-index: 2;
+
+	width: 50px;
+	height: 24px;
+
+	background-color: transparent;
+
+	cursor: pointer;
+	border: none;
+}
+
+.main-nav__list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+@media (max-width: @mobile-tablet-width) {
+
+	.main-nav--closed .main-nav__toggle::before {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		width: 50px;
+		height: 4px;
+
+		background-color: #ffffff;
+		box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+	}
+
+	.main-nav--closed .main-nav__toggle:hover::before,
+	.main-nav--closed .main-nav__toggle:focus::before {
+		background-color: #d22856;
+		box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+	}
+
+	.main-nav--closed .main-nav__toggle:active::before {
+		opacity: 0.3;
+	}
+
+	.main-nav--closed .main-nav__list {
+		display: none;
+	}
+
+	.main-nav--closed .main-nav__wrapper-header  {
+		background-color: rgba(0, 0, 0, 0.3);
+		border-bottom: none;
+	}
+
+	.main-nav--opened .main-nav__toggle {
+		width: 25px;
+		height: 25px;
+
+		&::before,
+		&::after {
+			content: "";
+
+			position: absolute;
+			top: 10px;
+			right: -2px;
+
+			width: 29px;
+			height: 4px;
+
+			background-color: #ffffff;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+			box-shadow: none;
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+
+		&:hover::before,
+		&:hover::after,
+		&:focus::before,
+		&:focus::after {
+			background-color: #d22856; 
+		}
+
+		&:active::before,
+		&:active::after {
+			opacity: 0.3;
+		}
+	}
+
+	.main-nav--nojs .main-nav__list {
+		display: block;
+	}
+
+	.main-nav--nojs .main-nav__toggle {
+		display: none;
+	}
+
+	.main-nav--nojs .main-nav__wrapper-header {
+		background-color: #283645;
+		border-bottom: 1px solid #000000;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.main-nav__toggle {
+		top: 42px;
+	}
+
+	.main-nav__wrapper-header {
+		padding: 27px 20px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.main-nav {
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	.main-nav__wrapper {
+		flex-direction: row;
+		
+		width: 940px;
+		margin: 0 auto;
+	}
+
+	.main-nav__wrapper-header {
+		background-color: transparent;
+		border: none;
+	}
+
+	.main-nav__toggle {
+		display: none;
+	}
+}
