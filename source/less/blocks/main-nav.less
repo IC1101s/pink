@@ -17,6 +17,11 @@
 	border-bottom: 1px solid #000000;
 }
 
+.main-nav__logo-icon--tablet,
+.main-nav__logo-icon--desktop {
+	display: none;
+}
+
 .main-nav__toggle {
 	position: absolute;
 	top: 22px;
@@ -136,6 +141,30 @@
 	.main-nav__wrapper-header {
 		padding: 27px 20px;
 	}
+
+	.main-nav__logo-icon {
+		width: 146.3px;
+		height: 40.375px;
+
+		fill: #ffffff;
+
+		&:hover,
+		&:focus {
+			fill: #d22856;
+		}	
+
+		&:active {
+			fill: rgba(255, 255, 255, 0.3);
+		}
+
+		&--tablet {
+			display: block;	
+		}
+
+		&--mobile {
+			display: none; 
+		}
+	}
 }
 
 @media (min-width: @desktop-width) {
@@ -153,6 +182,19 @@
 	.main-nav__wrapper-header {
 		background-color: transparent;
 		border: none;
+	}
+
+	.main-nav__logo-icon {
+		width: 146.3px;
+		height: 40.375px;
+
+		&--desktop {
+			display: block;
+		}
+
+		&--tablet {
+			display: none; 
+		}
 	}
 
 	.main-nav__toggle {

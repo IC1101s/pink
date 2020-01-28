@@ -12,12 +12,17 @@
 			<div class="main-nav__wrapper">
 				<div class="main-nav__wrapper-header">
 					<a class="main-nav__logo" href="index.html">
-						<picture>
+						<svg class="main-nav__logo-icon" width="74.426" height="22.859">
+							<use class="main-nav__logo-icon--mobile" xlink:href="img/sprite.svg#logo-mobile"></use>
+							<use class="main-nav__logo-icon--tablet" xlink:href="img/sprite.svg#logo-tablet"></use>
+							<use class="main-nav__logo-icon--desktop" xlink:href="img/sprite.svg#logo-desktop"></use>
+						</svg>
+						<!-- <picture>
 							<source media="(min-width:1080px)" srcset="img/logo-pink-white-desktop.svg">
 							<source media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
 							<img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" 
 								alt="Логотип сайта - Pink">
-						</picture>
+						</picture> -->
 					</a>
 					<button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
 				</div>
