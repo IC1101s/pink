@@ -7,17 +7,21 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+	<div style="display: none">
+		<include src="build/img/sprite.svg"><include>	
+	</div>
+
 	<header class="page-header">
 		<nav class="main-nav main-nav--closed main-nav--nojs">
 			<div class="main-nav__wrapper">
 				<div class="main-nav__wrapper-header">
-					<a class="main-nav__logo" href="index.html">
+					<a class="main-nav__logo" href="index.html">	
 						<svg class="main-nav__logo-icon" role="img" aria-labelledby="logo" focusable="false" 
 							width="74.426" height="22.859">
 							<title id="logo">Логотип сайта - Pink</title>
-							<use class="main-nav__logo-icon--mobile" xlink:href="img/sprite.svg#logo-mobile"></use>
-							<use class="main-nav__logo-icon--tablet" xlink:href="img/sprite.svg#logo-tablet"></use>
-							<use class="main-nav__logo-icon--desktop" xlink:href="img/sprite.svg#logo-desktop"></use>
+							<use class="main-nav__logo-icon--mobile" xlink:href="#logo-pink-white-mobile"></use>
+							<use class="main-nav__logo-icon--tablet" xlink:href="#logo-pink-white-tablet"></use>
+							<use class="main-nav__logo-icon--desktop" xlink:href="#logo-pink-white-desktop"></use>
 						</svg>
 						<!-- <picture>
 							<source media="(min-width:1080px)" srcset="img/logo-pink-white-desktop.svg">
@@ -44,28 +48,41 @@
 				</ul>
 			</div>
 		</nav>
-		<section class="application">
-			<p class="application__slogan">Взгляните на жизнь иначе!</p>
-			<div class="application__wrapper-devices">
-				<a class="application__download button" href="#download">Скачать приложение</a>
-				<ul class="application__devices devices-list">
-					<li class="devices-list__item">
-						<a href="#apple"><img src="img/logo-apple.svg" alt="Apple"></a>
-					</li>
-					<li class="devices-list__item">
-						<a href="#android"><img src="img/logo-android.svg" alt="Android"></a>
-					</li>
-					<li class="devices-list__item">
-						<a href="#microsoft"><img src="img/logo-microsoft.svg" alt="Microsoft"></a>
-					</li>
-				</ul>
-				<p class="application__devices-text">
-					Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-				</p>
-			</div>
-		</section>
 	</header>
 
+	<main>
+		<section class="application">
+			<div class="application__wrapper">
+				<p class="application__slogan">Взгляните на жизнь иначе!</p>
+				<div class="application__wrapper-devices">
+					<a class="application__download button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
+					<ul class="application__devices devices-list">
+						<li class="devices-list__item">
+							<a href="https://www.apple.com/ru/" target="_blank">
+								<img src="img/logo-apple.svg" alt="Apple">
+							</a>
+						</li>
+						<li class="devices-list__item">
+							<a href="https://www.android.com/" target="_blank">
+								<img src="img/logo-android.svg" alt="Android">
+							</a>
+						</li>
+						<li class="devices-list__item">
+							<a href="https://www.microsoft.com/" target="_blank">
+								<img src="img/logo-microsoft.svg" alt="Microsoft">
+							</a>
+						</li>
+					</ul>
+					<p class="application__devices-text">
+						Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
 	<script src="js/script.js"></script>
+	<!-- <script src="js/svg4everybody.min.js"></script>
+	<script>svg4everybody();</script> -->
 </body>
 </html>
