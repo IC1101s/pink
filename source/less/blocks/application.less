@@ -1,15 +1,20 @@
 .application {
-	background-image: url("../img/iphone-hand-mobile@1x.png");
+	background-color: #2c3c4c;
+	background-image: 
+		url("../img/iphone-hand-mobile@1x.png"),
+		url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
-	background-position: center 115px;
-	background-size: 258px;
+	background-position: center 115px, center top;
+	background-size: 258px, 100%;
 }
 
 @media (min-resolution: 144dpi),
        (min-resolution: 1.5dppx) {
 
 	.application {
-		background-image: url("../img/iphone-hand-mobile@2x.png"); 
+		background-image: 
+			url("../img/iphone-hand-mobile@2x.png"),
+			url("../img/bg-back-mobile@2x.jpg"); 
 	}
 }
 
@@ -57,20 +62,26 @@
 
 @media (min-width: @tablet-width) {
 	.application {
-		width: 660px;
-		margin: 0 auto;
-
-		background-image: url("../img/iphone-hand-tablet@1x.png");
-		background-position: center bottom;
-		background-size: 700px;
+		background-image: 
+			url("../img/iphone-hand-tablet@1x.png"),
+			url("../img/bg-back-tablet@1x.jpg");
+		background-position: center bottom, center top;
+		background-size: 700px, 1200px;
 	}
 
 		@media (min-resolution: 144dpi),
 	           (min-resolution: 1.5dppx) {
 
 		.application {
-			background-image: url("../img/iphone-hand-tablet@2x.png"); 
+			background-image: 
+				url("../img/iphone-hand-tablet@2x.png"),
+				url("../img/bg-back-tablet@2x.jpg"); 
 		}
+	}
+
+	.application__wrapper {
+		width: 660px;
+		margin: 0 auto;
 	}
 
 	.application__slogan {
@@ -110,20 +121,26 @@
 
 @media (min-width: @desktop-width) { 
 	.application {
-		width: 940px;
-		margin: 0 auto;
-
-		background-image: url("../img/iphone-hand-desktop@1x.png");
-		background-position: 0 bottom;
-		background-size: 1050px;
+		background-image: 
+			url("../img/iphone-hand-desktop@1x.png"),
+			url("../img/bg-back-desktop@1x.jpg");
+		background-position: bottom, center top;
+		background-size: 1050px, cover;
 	}
 
 		@media (min-resolution: 144dpi),
 	           (min-resolution: 1.5dppx) {
 
 		.application {
-			background-image: url("../img/iphone-hand-desktop@2x.png"); 
+			background-image: 
+				url("../img/iphone-hand-desktop@2x.png"),
+				url("../img/bg-back-desktop@2x.jpg"); 
 		}
+	}
+
+	.application__wrapper {
+		width: 940px;
+		margin: 0 auto;
 	}
 
 	.application__slogan {
