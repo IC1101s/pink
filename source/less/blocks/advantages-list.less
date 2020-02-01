@@ -5,6 +5,10 @@
 	
 	text-align: center;
 
+	&:first-child {
+		padding-top: 120px;
+	}
+
 	&:last-child {
 		margin-bottom: 0;
 		padding-bottom: 315px;
@@ -115,6 +119,10 @@
 
 		text-align: left;
 
+		&:first-child {
+			padding-top: 0px;
+		}
+
 		&:last-child {
 			padding-bottom: 0;
 		}
@@ -132,6 +140,7 @@
 @media (min-width: @desktop-width) {
 	.advantages-list {
 		flex-direction: row;
+		flex-wrap: wrap;
 
 		padding: 0;
 	}
@@ -142,9 +151,14 @@
 	}
 
 	.advantages-list__item {
+		width: 33.3333%;
 		padding-top: 360px;
 
 		text-align: center;
+
+		&:first-child {
+			padding-top: 360px;
+		}
 
 		&--phone-1,
 		&--phone-2,

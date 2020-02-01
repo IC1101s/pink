@@ -1,13 +1,21 @@
 .advantages {
-	position: relative;
-
 	margin-bottom: 100px;
+}
+
+.advantages__wrapper {
+	// width: 280px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.advantages__wrapper-list {
+	position: relative;
 
 	&::before {
 		content: "";
 
 		position: absolute;
-		top: 0; 
+		top: 0;
 		z-index: -1; 
 
 		width: 100%;
@@ -18,21 +26,13 @@
 			url("../img/bg-triangle-white.svg");
 		background-repeat: no-repeat;
 		background-position: center top;
-		background-size: auto 420px;
 	}
-}
-
-.advantages__wrapper {
-	// width: 280px;
-	padding: 0 20px;
-	margin: 0 auto;
 }
 
 .advantages__slogan {
 	max-width: 210px;
 	margin: auto;
 	margin-top: 45px;
-	margin-bottom: 115px;
 
 	text-align: center;
 }
@@ -58,10 +58,10 @@
 }
 
 @media (min-width: @tablet-width) {
-	.advantages {
+	.advantages__wrapper-list {
 
 		&::before {
-			background-size: auto 500px;
+			background-size: auto 155px;
 		}
 	}
 
@@ -109,10 +109,10 @@
 }
 
 @media (min-width: @desktop-width) {
-	.advantages {
-		
+	.advantages__wrapper-list {
+
 		&::before {
-			background-size: auto 655px;
+			background-size: 100% 115px;
 		}
 	}
 
