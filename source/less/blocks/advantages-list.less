@@ -1,0 +1,84 @@
+.advantages-list__item {
+	margin: 0 auto;
+	margin-bottom: 37px;
+	max-width: 400px;
+	
+	text-align: center;
+
+	&:last-child {
+		margin-bottom: 0;
+		padding-bottom: 300px;
+	}
+
+	&--phone-3 {
+		background-image: url("../img/iphone-screen-mobile@1x.png");
+		background-repeat: no-repeat;
+		background-position: center 140px;
+		background-size: 157px;
+	}
+
+	@media (min-resolution: 144dpi),
+	       (min-resolution: 1.5dppx) {
+
+		&--phone-3 {
+			background-image: url("../img/iphone-screen-mobile@2x.png");
+		}
+	}
+}
+
+.advantages-list__title {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.advantages-list__text {
+	margin-bottom: 0;
+
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #283645;	
+}
+
+@media (min-width: @tablet-width) {
+	.advantages-list__item {
+		max-width: none;
+		
+		text-align: left;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+		&--phone-3 {
+			background-image: none;
+		}
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.advantages-list {
+		display: flex;
+		// justify-content: space-between;
+
+		padding-top: 360px;
+		padding-bottom: 20px;
+	}
+
+	.advantages-list__item {
+		// width: 180px;
+		margin-bottom: 0;
+
+		text-align: center;
+	}
+
+	.advantages-list__title {
+
+	}
+
+	.advantages-list__text {
+		
+	}
+}
