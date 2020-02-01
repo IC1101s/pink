@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Pink - приложение для фото</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.min.css">
 	<script async src="js/simple-webp.min.js"></script>
 	<noscript data-webp><img src="" alt=""></noscript>
@@ -13,6 +16,7 @@
 		<include src="build/img/sprite.svg"><include>	
 	</div>
 
+	<!-- Header -->
 	<header class="page-header">
 		<h1 class="visually-hidden">Pink - приложение для фотографий</h1>
 		<nav class="main-nav main-nav--closed main-nav--nojs">
@@ -54,6 +58,7 @@
 	</header>
 
 	<main>
+		<!-- Application -->
 		<section class="application">
 			<div class="application__wrapper">
 				<h2 class="visually-hidden">Скачать приложение Pink</h2>
@@ -84,6 +89,7 @@
 			</div>
 		</section>
 
+		<!-- Advantages -->
 		<section class="advantages">
 			<div class="advantages__wrapper">	
 				<h2 class="visually-hidden">Преимущества приложения</h2>
@@ -120,10 +126,23 @@
 				</div>
 			</div>
 		</section>
+		
+		<!-- Statistics -->
+		<section class="statistics">
+			<div class="statistics__wrapper">
+				<h2 class="visually-hidden">Статистика приложения</h2>
+				<div class="statistics__wrapper-list">
+					<b class="statistics__title">Эффект<br> на 24 часа!</b>
+					<p class="statistics__text">
+						Британские ученые провели исследованияи доказали,
+						что положительный эффект от использования приложения длится целые сутки!
+					</p>
+					<a class="statistics__link" href="#detailed">Узнать больше об исследовании</a>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<script src="js/script.js"></script>
-	<!-- <script src="js/svg4everybody.min.js"></script>
-	<script>svg4everybody();</script> -->
 </body>
 </html>
