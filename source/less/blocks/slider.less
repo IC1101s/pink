@@ -24,13 +24,28 @@
 	border: none;
 	border-radius: 50%;
 	vertical-align: middle;
-	background-color: #bec2c7;
+	background-color: rgba(40, 54, 69, 0.3);
+
+	&:hover,
+	&:focus {
+		background-color: rgba(40, 54, 69, 0.6);
+	}
+
+	&:active {
+		background-color: rgba(40, 54, 69, 0.1);
+	}
 
 	&--active {
 		padding: 3px;
 
 		border: 3px solid #283645;
 		background-color: transparent;
+
+		&:hover,
+		&:focus,
+		&:active  {
+			background-color: transparent;
+		}
 	}
 
 	&:last-child {

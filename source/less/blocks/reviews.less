@@ -54,10 +54,20 @@
 		height: 30px;
 
 		cursor: pointer;
-		border: 3px solid #bec2c7;
+		border: 3px solid rgba(40, 54, 69, 0.3);
 		border-top-width: 0;
 		border-right-width: 0;
 		background-color: transparent;
+
+		&:hover,
+		&:focus {
+			outline: transparent;
+			border-color: rgba(40, 54, 69, 0.6);
+		}
+
+		&:active {
+			border-color: rgba(40, 54, 69, 0.1);
+		}
 	}
 
 	.reviews__prev {
