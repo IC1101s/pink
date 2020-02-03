@@ -1,0 +1,35 @@
+.slider__toggles {
+	width: 70px;
+	height: 14px;
+
+	font-size: 0;
+}
+
+.slider__toggle {
+	display: inline-block;
+
+	padding: 0;
+	margin-right: 16px;
+
+	width: 6px;
+	height: 6px;
+
+	font-size: 1px;
+	
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+	vertical-align: middle;
+	background-color: #bec2c7;
+
+	&--active {
+		padding: 3px;
+
+		border: 3px solid #283645;
+		background-color: transparent;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
