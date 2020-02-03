@@ -4,12 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Pink - приложение для фото</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preload" href="fonts/opensanslight.woff2" as="font" сrossorigin="anonymous">
 	<link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
 	<link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-	<link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.min.css">
-	<script async="" src="js/simple-webp.min.js"></script>
-	<noscript data-webp=""><img src="" alt=""></noscript>
+	<script src="js/modernizr-custom.js"></script>
 </head>
 <body>
 	<div style="display: none">
@@ -132,11 +131,48 @@
 				<div class="statistics__wrapper-list">
 					<b class="statistics__title">Эффект<br> на 24 часа!</b>
 					<p class="statistics__text">
-						Британские ученые провели исследованияи доказали,
+						Британские ученые провели исследования и доказали,
 						что положительный эффект от использования приложения длится целые сутки!
 					</p>
 					<a class="statistics__link" href="#detailed">Узнать больше об исследовании</a>
 				</div>
+			</div>
+		</section>
+
+		<!-- Reviews -->                         <!-- ПЕРЕДЕЛАТЬ В blockquote -->
+		<section class="reviews">
+			<div class="reviews__wrapper slider">
+				<h2 class="visually-hidden">Отзывы о приложении</h2>
+				<ul class="reviews__list reviews-list slider__list">
+					<li class="reviews-list__item slider__item">
+						<b class="reviews-list__name">Николай Петров</b>
+						<span class="reviews-list__description">25 лет, водитель трамвая</span>
+						<p class="reviews-list__text">
+							«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+							привычные серые вещи! А еще я познакомился со своей будущей женой в
+							комментариях к выложенной фотографии!»
+						</p>
+					</li>
+					<li class="reviews-list__item slider__item"></li>
+					<li class="reviews-list__item slider__item"></li>
+				</ul>
+				<button class="reviews__prev" type="button">
+					<span class="visually-hidden">Предыдущий отзыв</span>
+				</button>
+				<button class="reviews__next" type="button">
+					<span class="visually-hidden">Следующий отзыв</span>
+				</button>
+				<p class="reviews__toggles slider__toggles">
+					<button class="slider__toggle slider__toggle--active" type="button">
+						<span class="visually-hidden">1</span>
+					</button>
+					<button class="slider__toggle" type="button">
+						<span class="visually-hidden">2</span>
+					</button>
+					<button class="slider__toggle" type="button">
+						<span class="visually-hidden">3</span>
+					</button>
+				</p>
 			</div>
 		</section>
 	</main>
