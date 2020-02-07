@@ -1,0 +1,36 @@
+.social-list {
+	display: flex;
+	justify-content: space-between;
+	width: 180px;
+}
+
+.social-list__item {
+	font-size: 0;
+}
+
+.social-list__item-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	width: 45px;
+	height: 45px;
+
+	font-size: 1px;
+
+	border: 3px solid rgba(40, 54, 69, 0.1);
+	border-radius: 50%;
+
+	&:hover,
+	&:focus {
+		border-color: rgb(40, 54, 69);
+	}
+
+	&:active {
+		border-color: rgba(40, 54, 69, 0.1);
+
+		img {
+			opacity: 0.3;
+		}
+	}
+}
