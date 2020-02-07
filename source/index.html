@@ -28,9 +28,9 @@
 			<div class="main-nav__wrapper">
 				<div class="main-nav__wrapper-header">
 					<a class="main-nav__logo">	
-						<svg class="main-nav__logo-icon" role="img" aria-labelledby="logo" focusable="false" 
+						<svg class="main-nav__logo-icon" role="img" aria-labelledby="logo-header" focusable="false" 
 							width="74.426" height="22.859">
-							<title id="logo">Логотип сайта - Pink</title>
+							<title id="logo-header">Логотип сайта - Pink</title>
 							<use class="main-nav__logo-icon--mobile" xlink:href="#logo-pink-white-mobile"></use>
 							<use class="main-nav__logo-icon--tablet" xlink:href="#logo-pink-white-tablet"></use>
 							<use class="main-nav__logo-icon--desktop" xlink:href="#logo-pink-white-desktop"></use>
@@ -68,17 +68,17 @@
 					<a class="application__download button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
 					<ul class="application__devices devices-list">
 						<li class="devices-list__item">
-							<a href="https://www.apple.com/ru/" target="_blank">
+							<a href="https://www.apple.com/ru/" target="_blank" title="Apple">
 								<img src="img/logo-apple.svg" alt="Apple - логотип">
 							</a>
 						</li>
 						<li class="devices-list__item">
-							<a href="https://www.android.com/" target="_blank">
+							<a href="https://www.android.com/" target="_blank" title="Android">
 								<img src="img/logo-android.svg" alt="Android - логотип">
 							</a>
 						</li>
 						<li class="devices-list__item">
-							<a href="https://www.microsoft.com/" target="_blank">
+							<a href="https://www.microsoft.com/" target="_blank" title="Microsoft">
 								<img src="img/logo-microsoft.svg" alt="Microsoft - логотип">
 							</a>
 						</li>
@@ -331,7 +331,46 @@
 	</main>
 
 	<footer class="page-footer">
-		
+		<div class="page-footer__wrapper">
+			<a class="page-footer__logo">	
+				<svg class="page-footer__logo-icon" role="img" aria-labelledby="logo-footer" focusable="false" 
+					width="146.3" height="40.375">
+					<title id="logo-footer">Логотип сайта - Pink</title>
+					<use class="page-footer__logo-icon--mobile" xlink:href="#logo-pink-blue-mobile"></use>
+					<use class="page-footer__logo-icon--desktop" xlink:href="#logo-pink-blue-desktop"></use>
+				</svg>
+			</a>
+			<ul class="page-footer__social social-list">
+				<li class="social-list__item">
+					<a class="social-list__item-link" href="#twitter" title="Twitter">
+						<img src="img/icon-twitter.svg" alt="Логотип - Twitter">
+						<span class="visually-hidden">Twitter</span>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__item-link" href="#facebook" title="Facebook">
+						<img src="img/icon-facebook.svg" alt="Логотип - Facebook">
+						<span class="visually-hidden">Facebook</span>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__item-link" href="#youtube" title="YouTube">
+						<img src="img/icon-youtube.svg" alt="Логотип - YouTube">
+						<span class="visually-hidden">YouTube</span>
+					</a>
+				</li>
+			</ul>
+			<p class="page-footer__copyright">
+				<b class="page-footer__copyright-title">Разработано для:</b> 
+				<a class="page-footer__copyright-link" href="https://htmlacademy.ru" title="HTML Academy">
+					<svg class="page-footer__copyright-img" role="img" aria-labelledby="copyright" focusable="false" 
+						width="26.943" height="34.09">
+						<title id="copyright">Логотип - HTML Academy</title>
+						<use class="page-footer__copyright-img-cs" xlink:href="#logo-htmlacademy"></use>
+					</svg>
+				</a>
+			</p>
+		</div>
 	</footer>
 
 	<script src="js/script.js"></script>
