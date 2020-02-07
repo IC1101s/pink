@@ -50,7 +50,7 @@ gulp.task("images", function () {
 });
 
 gulp.task("sprite", function () {
-	return gulp.src("source/img/logo-pink-*.svg")
+	return gulp.src("source/img/{logo-pink-*,logo-htmlacademy}.svg")
 	.pipe(svgstore({
 		inlineSvg: true
 	}))
