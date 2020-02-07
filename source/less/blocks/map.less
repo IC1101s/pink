@@ -1,0 +1,84 @@
+.map {
+	background-color: #ffffff;
+}
+
+.map__wrapper {
+	position: relative;
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+
+		width: 100%;
+		height: 32px;
+
+		background-image: 
+			url("../img/bg-triangle-white-footer.svg");
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: 100% 32px;
+	}	
+}
+	
+
+.map__image {
+	position: absolute;
+	top: -445px; //-53.5vh
+	z-index: -2;
+
+	width: 100%;
+	height: 645px;
+}
+
+.map__google {
+	width: 100%;
+	height: 200px;
+}
+
+@media (min-width: @tablet-width) {
+	.map__wrapper {
+		// width: 620px;
+		&::before {
+			content: "";
+
+			height: 67px;
+
+			background-size: 100% 67px;
+		}	
+	}	
+
+	.map__image {
+		top: -470px;
+
+		height: 848px;
+	}
+
+	.map__google {
+		height: 375px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.map__wrapper {
+		// width: 940px;
+		&::before {
+			content: "";
+
+			height: 105px;
+
+			background-size: 100% 105px;
+		}	
+	}	
+
+	.map__image {
+		height: 976px;
+	}
+
+	.map__google {
+		height: 505px;
+	}
+}
