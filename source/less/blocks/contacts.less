@@ -1,0 +1,128 @@
+.contacts {
+	background-color: #ffffff;
+}
+
+.contacts__wrapper {
+	// width: 280px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.contacts__questions {
+	margin: 0;
+	padding-top: 45px;
+	padding-bottom: 35px;
+
+	font-size: 24px;
+	line-height: normal;
+	font-weight: 300;
+	color: #283645;
+
+	text-align: center;
+}
+
+.contacts__information {
+	margin-bottom: 30px;
+
+	font-size: 18px;
+	line-height: normal;
+	font-weight: 700;
+	color: #283645;
+
+	text-align: center;
+}
+
+.contacts__information-item {
+	margin: 0;
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.contacts__phone-number,
+.contacts__letter-mail,
+.contacts__address-street {
+	font-size: 24px;
+	line-height: normal;
+	font-weight: 300;
+	font-style: normal;
+	color: #d22856;
+}
+
+.contacts__letter-mail {
+
+	&:hover,
+	&:focus {
+		color: rgb(40, 54, 69);
+		text-decoration: underline;
+	}
+
+	&:active {
+		color: rgba(40, 54, 69, 0.3);
+		text-decoration: none;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.contacts__wrapper {
+		// width: 620px;
+	}
+
+	.contacts__questions {
+		padding-top: 50px;
+		padding-bottom: 45px;
+
+		font-size: 40px;
+	}
+
+	.contacts__information {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: flex-start;
+	}	
+
+	.contacts__information-item {
+		margin: 0;
+
+		&:last-child {
+			margin-top: 50px;
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.contacts__wrapper {
+		width: 940px;
+		padding: 0 10px;
+	}
+
+	.contacts__questions {
+		padding-top: 70px;
+		padding-bottom: 55px;
+
+		font-size: 50px;
+	}
+
+	.contacts__phone,
+	.contacts__letter,
+	.contacts__address {
+		display: inline-block;
+		margin-bottom: 23px;
+	}
+	
+	.contacts__information-item {
+
+		&:nth-child(2) {
+			order: 3;
+		}
+
+		&:last-child {
+			margin-top: 0;
+			width: auto;
+		}
+	}
+}
