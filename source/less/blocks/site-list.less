@@ -1,10 +1,10 @@
 .site-list {
- 	font-weight: bold;
+ 	font-weight: 700;
 }
 
 .site-list a {
 	display: block;
-	padding: 18px 0;
+	padding: 15px 0;
 	text-align: center;
 
 	font-size: 18px;
@@ -31,18 +31,21 @@
 
 @media (min-width: @desktop-width) {
 	.site-list {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+
 		font-weight: 400;
 	}
 
 	.site-list__item {
 		position: relative;
 
-		display: inline-block;
-		margin-right: 80px;
+		margin-left: 80px;
 		padding: 45px 0;
 
-		&:last-child {
-			margin-right: 0;
+		&:first-child {
+			margin-left: 0;
 		}
 	}
 
