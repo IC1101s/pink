@@ -32,6 +32,8 @@
 @media (min-width: @desktop-width) {
 	.site-list {
 		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
 		justify-content: flex-end;
 		width: 100%;
 
@@ -42,7 +44,8 @@
 		position: relative;
 
 		margin-left: 80px;
-		padding: 45px 0;
+		padding-top: 20px;
+		padding-bottom: 15px;
 
 		&:first-child {
 			margin-left: 0;
@@ -50,11 +53,12 @@
 	}
 
 	.site-list__item--active {
+
 		&::after {
 			content: "";
 
 			position: absolute;
-			bottom: 30px;
+			bottom: 2px;
 			left: 1px;
 			right: 1px;
 			z-index: 2;
