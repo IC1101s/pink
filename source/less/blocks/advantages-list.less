@@ -1,17 +1,13 @@
 .advantages-list__item {
-	max-width: 455px;
+	max-width: 310px;
 	margin: auto;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	
 	text-align: center;
 
-	&:first-child {
-		padding-top: 120px;
-	}
-
 	&:last-child {
 		margin-bottom: 0;
-		padding-bottom: 315px;
+		padding-bottom: 317px;
 	}
 
 	&--phone-3 {
@@ -73,11 +69,12 @@
 @media (min-width: @tablet-width) {
 	.advantages-list {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: center;
-		padding-left: 305px;
+		padding-left: 309px;
 		padding-bottom: 45px;
-		padding-top: 120px;
+		padding-top: 122px;
 		min-height: 515px;
 
 		background-repeat: no-repeat;
@@ -119,7 +116,7 @@
 		text-align: left;
 
 		&:first-child {
-			padding-top: 0px;
+			padding-top: 0;
 		}
 
 		&:last-child {
@@ -139,7 +136,6 @@
 @media (min-width: @desktop-width) {
 	.advantages-list {
 		flex-direction: row;
-		flex-wrap: wrap;
 		padding: 0;
 	}
 
@@ -151,11 +147,16 @@
 	.advantages-list__item {
 		width: 33.3333%;
 		padding-top: 360px;
+		margin-bottom: 50px;
 
 		text-align: center;
 
 		&:first-child {
 			padding-top: 360px;
+		}
+
+		&:last-child {
+			margin-bottom: 50px;
 		}
 
 		&--phone-1,
@@ -246,15 +247,15 @@
 	}
 
 	.advantages-list__title {
-		padding: 0 15px;
-		margin-bottom: 25px;
+		padding: 0 35px;
+		margin-bottom: 20px;
 
 		font-size: 30px;
 		line-height: 30px;
 	}
 
 	.advantages-list__text {
-		padding: 0 30px;
+		padding: 0 35px;
 
 		font-size: 18px;
 		line-height: 30px;
