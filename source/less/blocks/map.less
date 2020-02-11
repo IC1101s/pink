@@ -1,6 +1,27 @@
-.map {
-	background-color: #ffffff;
-}
+// .map {
+// 	position: relative;
+
+// 	&::after {
+// 		content: "";
+
+// 		position: absolute;
+// 		bottom: -126px;
+// 		left: 50%;
+// 		z-index: 3;
+
+// 		width: 15px;
+// 		height: 15px;
+
+// 		border: 10px solid #ffffff;
+// 		border-radius: 50%;
+// 		background-color: red;
+
+// 		transform: translate(-50%, 0);
+// 	}
+// }               
+
+
+// ПОДУМААААААААТЬ!!!!!!!!
 
 .map__wrapper {
 	position: relative;
@@ -22,6 +43,7 @@
 		background-position: center top;
 		background-size: 100% 32px;
 	}	
+
 }
 	
 
@@ -42,6 +64,8 @@
 @media (min-width: @tablet-width) {
 	.map__wrapper {
 		// width: 620px;
+		height: 373px;
+	
 		&::before {
 			content: "";
 
@@ -52,7 +76,7 @@
 	}	
 
 	.map__image {
-		top: -470px;
+		top: -350px; 
 
 		height: 848px;
 	}
@@ -65,6 +89,8 @@
 @media (min-width: @desktop-width) {
 	.map__wrapper {
 		// width: 940px;
+		height: 502px;
+
 		&::before {
 			content: "";
 
@@ -75,6 +101,8 @@
 	}	
 
 	.map__image {
+		top: -290px; 
+
 		height: 976px;
 	}
 
