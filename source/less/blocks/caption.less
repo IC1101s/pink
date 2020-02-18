@@ -1,0 +1,163 @@
+.caption {
+	height: 237px;
+
+	background-color: #2b3b4b;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+}
+
+.no-webp .caption {
+	background-image: 
+		url("../img/bg-back-mobile@1x.jpg");
+
+	@media (min-resolution: 144dpi),
+	       (min-resolution: 1.5dppx) {
+
+		background-image: 
+			url("../img/bg-back-mobile@2x.jpg"); 
+	}
+}
+
+.webp .caption {
+	background-image: 
+		url("../img/bg-back-mobile@1x.webp");
+
+	@media (min-resolution: 144dpi),
+	       (min-resolution: 1.5dppx) {
+
+		background-image: 
+			url("../img/bg-back-mobile@2x.webp"); 	
+	}
+}
+
+.caption--block,
+.caption--nojs {
+	height: 167px;
+}
+
+.caption__wrapper {
+	width: auto;
+	padding: 0 20px;
+}
+
+.caption__title {
+	margin: 0 auto;
+	padding-top: 100px;
+	width: 280px;
+
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #ffffff;
+
+	text-align: center;
+}
+
+.caption__title--block,
+.caption__title--nojs {
+	padding-top: 26px;
+}
+
+@media (min-width: @tablet-width) {
+	.caption {
+		height: 440px;
+
+		background-size: 1200px;
+	}
+
+	.no-webp .caption {
+		background-image: 
+			url("../img/bg-back-tablet@1x.jpg");
+
+		@media (min-resolution: 144dpi),
+		       (min-resolution: 1.5dppx) {
+
+			background-image: 
+				url("../img/bg-back-tablet@2x.jpg"); 
+		}
+	}
+
+	.webp .caption {
+		background-image: 
+			url("../img/bg-back-tablet@1x.webp");
+
+		@media (min-resolution: 144dpi),
+		       (min-resolution: 1.5dppx) {
+
+			background-image: 
+				url("../img/bg-back-tablet@2x.webp"); 	
+		}
+	}
+
+	.caption--block,
+	.caption--nojs {
+		height: 330px;
+	}
+
+	.caption__wrapper {
+		width: auto;
+		padding: 0 20px;
+	}
+
+	.caption__title {
+		padding-top: 185px;
+		width: 500px;
+
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.caption__title--block,
+	.caption__title--nojs {
+		padding-top: 70px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.caption {
+		height: 394px;
+
+		background-size: 2560px;
+	}
+
+	.no-webp .caption {
+		background-image: 
+			url("../img/bg-back-desktop@1x.jpg");
+
+		@media (min-resolution: 144dpi),
+		       (min-resolution: 1.5dppx) {
+
+			background-image: 
+				url("../img/bg-back-desktop@2x.jpg"); 
+		}
+	}
+
+	.webp .caption {
+		background-image: 
+			url("../img/bg-back-desktop@1x.webp");
+
+		@media (min-resolution: 144dpi),
+		       (min-resolution: 1.5dppx) {
+
+			background-image: 
+				url("../img/bg-back-desktop@2x.webp"); 	
+		}
+	}
+
+	.caption__wrapper {
+		width: 940px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+
+	.caption__title {
+		padding-top: 173px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.caption {
+		background-size: cover;
+	}
+}
