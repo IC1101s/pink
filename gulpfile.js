@@ -51,7 +51,7 @@ gulp.task("images", function () {
 });
 
 gulp.task("sprite", function () {
-	return gulp.src("source/img/{logo-pink-*,logo-htmlacademy}.svg")
+	return gulp.src("source/img/{logo-pink-*,logo-htmlacademy,icon-editor-*}.svg")
 	.pipe(svgstore({
 		inlineSvg: true
 	}))
