@@ -267,10 +267,68 @@
 				</li>
 			</ul>
 		</section>	
+
+		<!-- Editor -->
+		<section class="editor">
+			<h2 class="visually-hidden">Редактор фотографий</h2>
+			<p class="editor__title">
+				Затмите их всех!<br>
+				Выкладывайте все, что накопилось в телефоне!
+			</p>
+			<div class="editor__background">
+				<div class="editor__wrapper">
+					<div class="editor__wrapper-image">
+						<picture>
+							<source type="image/webp" media="(min-width: 1080px)" 
+								srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+							<source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, 
+								img/photo-road-tablet@2x.webp 2x">	
+							<source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, 
+								img/photo-road-mobile@2x.webp 2x">	
+
+							<source media="(min-width: 1080px)" srcset="img/photo-road-desktop@1x.jpg 1x, 
+								img/photo-road-desktop@2x.jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, 
+								img/photo-road-tablet@2x.jpg 2x">	
+							<img class="editor__image" src="img/photo-road-mobile@1x.jpg" 
+								srcset="img/photo-road-mobile@2x.jpg 2x" alt="Вид на зимнюю дорогу">
+						</picture>
+					</div>
+					<div class="editor__wrapper-editing">
+						<div class="editor__button-wrapper">
+							<button class="editor__button" type="button">
+								<svg class="editor__button-icon editor__button-icon--active" width="48" height="48">
+									<use class="editor__button-crop" xlink:href="#icon-editor-crop"></use>
+								</svg>
+							</button>
+							<button class="editor__button" type="button">
+								<svg class="editor__button-icon" width="48" height="48">
+									<use class="editor__button-fill" xlink:href="#icon-editor-fill"></use>
+								</svg>
+							</button>
+							<button class="editor__button" type="button">
+								<svg class="editor__button-icon" width="31.92" height="31.92">
+									<use class="editor__button-contrast" xlink:href="#icon-editor-contrast"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="editor__wrapper-range">
+							<input class="editor__range editor__range--crop" type="range" value="87">
+							<input class="editor__range editor__range--fill" type="range" value="10">
+							<input class="editor__range editor__range--contrast" type="range" value="50">
+						</div>
+						<div class="editor__button-wrapper-2">
+							<button class="editor__submit button" type="submit">Запостить</button>
+							<button class="editor__сancel button" type="button">Отмена</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<!-- Footer -->
-	<footer class="page-footer">
+	<footer class="page-footer page-footer--active">
 		<div class="page-footer__wrapper">
 			<a class="page-footer__logo" href="index.html">	
 				<svg class="page-footer__logo-icon" role="img" aria-labelledby="logo-footer" focusable="false" 
