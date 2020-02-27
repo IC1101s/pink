@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<title>Pink - мобильное приложение для фотографий</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="приложение, мобильное, фотографии, фото, для телефона">
+	<meta name="description" content="Мобильное приложение для фотографий">
+	<link rel="preload" href="/fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/modernizr-custom.js"></script>
+	<script src="js/picturefill.min.js"></script>
+</head>
+<body>
+	<div style="display: none">
+		<include src="build/img/sprite.svg"><include>	
+	</div>
+	
+	<div class="skip-content">
+		<a href="#skip">Перейти к основному содержанию</a>
+	</div>
+
+	<!-- Header -->
+	<header class="page-header page-header--nojs">
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<div class="main-nav__wrapper">
+				<div class="main-nav__wrapper-header">
+					<a class="main-nav__logo" href="index.html">	
+						<svg class="main-nav__logo-icon" role="img" aria-labelledby="logo-header" focusable="false" 
+							width="74.426" height="22.859"> 
+							<title id="logo-header">Логотип сайта - Pink</title>
+							<use class="main-nav__logo-icon--mobile" xlink:href="#logo-pink-white-mobile"></use>
+							<use class="main-nav__logo-icon--tablet" xlink:href="#logo-pink-white-tablet"></use>
+							<use class="main-nav__logo-icon--desktop" xlink:href="#logo-pink-white-desktop"></use>
+						</svg>
+					</a>
+					<button class="main-nav__toggle" type="button">
+						<span class="visually-hidden">Меню</span>
+					</button>
+				</div>
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a href="index.html">Главная</a>
+					</li>
+					<li class="site-list__item">
+						<a href="photo.html">Фотографии</a>
+					</li>
+					<li class="site-list__item site-list__item--active">
+						<a>Конкурс</a>
+					</li>
+					<li class="site-list__item">
+						<a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Main -->
+	<main class="page-main">
+		<!-- Caption -->
+		<section class="caption caption--nojs">
+			<div class="caption__wrapper">
+				<h1 class="caption__title caption__title--form caption__title--nojs">
+					Конкурс на самое безбашенное путешествие с Пинк
+				</h1>
+			</div>
+		</section>
+
+		<!-- Information -->
+		<section class="information">
+			<div class="information__wrapper">
+				<h2 class="visually-hidden">Форма для участия</h2>
+				<p class="information__title">
+					Поделитесь своей историей и получите шанс выиграть ценный приз — 
+					1000 миль на вашу бонусную карту!
+					<span class="information__title-span">Пожалуйста, заполните форму ниже:</span>
+				</p>
+				<form class="information__form" action="https://echo.htmlacademy.ru/" method="post">
+					<div class="information__wrapper-desktop">
+						<fieldset class="information__full-name">
+							<legend class="information__legend-name visually-hidden">Ф.И.О.</legend>
+							<div class="information__name">
+								<label class="information__label-name" for="surname-field">Фамилия:</label><br>
+								<input class="information__name-text" type="text" name="surname" id="surname-field" 
+									placeholder="Укажите фамилию *" autocomplete="off" required>
+							</div>
+							<div class="information__name">
+								<label class="information__label-name" for="name-field">Имя:</label><br>
+								<input class="information__name-text" type="text" name="name" id="name-field" 
+									placeholder="Введите ваше имя *" autocomplete="off" required>
+							</div>
+							<div class="information__name">
+								<label class="information__label-name" for="patronymic-field">Отчество:</label><br>
+								<input class="information__name-text" type="text" name="patronymic" id="patronymic-field"
+									placeholder="Ну и отчество тоже" autocomplete="off">
+							</div>
+						</fieldset>
+
+						<div class="information__wrapper-system">
+							<fieldset class="information__system">
+								<legend class="information__legend-system">
+									С каким приложением путешествовали?
+								</legend>
+								<ul class="information__system-list">
+									<li class="information__system-item">
+										<input class="information__system-radio visually-hidden" type="radio" name="system" 
+											id="ios-field" checked>
+										<label class="information__label-system" for="ios-field">Pink для iOS</label>
+									</li>
+									<li class="information__system-item">
+										<input class="information__system-radio visually-hidden" type="radio" name="system" 
+											id="android-field">
+										<label class="information__label-system" for="android-field">Pink на Android</label>
+									</li>
+									<li class="information__system-item">
+										<input class="information__system-radio visually-hidden" type="radio" name="system" 
+											id="windows-field">
+										<label class="information__label-system" for="windows-field">Windows Phone</label>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+					</div>
+					
+					<div class="information__wrapper-progress">
+						<fieldset class="information__progress">
+							<legend class="information__legend-progress">
+								Ваши безбашенные<br> достижения в путешествии
+							</legend>
+							<ul class="information__progress-list">
+								<li class="information__progress-item">
+									<input class="information__checkbox visually-hidden" type="checkbox" 
+										name="selfieShark" id="selfieShark-field" checked>
+									<label class="information__label-progress" for="selfieShark-field">
+										Сделал селфи с акулой
+									</label>
+								</li>
+								<li class="information__progress-item">
+									<input class="information__checkbox visually-hidden" type="checkbox" 
+										name="sunburned" id="sunburned-field" checked>
+									<label class="information__label-progress" for="sunburned-field">
+										Обгорел на пляже
+									</label>
+								</li>
+								<li class="information__progress-item">
+									<input class="information__checkbox visually-hidden" type="checkbox" 
+										name="сhuckNorris" id="сhuckNorris-field">
+									<label class="information__label-progress" for="сhuckNorris-field">
+										Видел Чака Норриса
+									</label>
+								</li>
+								<li class="information__progress-item">
+									<input class="information__checkbox visually-hidden" type="checkbox" 
+										name="boughtSouvenirs" id="boughtSouvenirs-field">
+									<label class="information__label-progress" for="boughtSouvenirs-field">
+										Накупил сувениров
+									</label>
+								</li>
+								<li class="information__progress-item">
+									<input class="information__checkbox visually-hidden" type="checkbox" 
+										name="heldTower" id="heldTower-field" checked>
+									<label class="information__label-progress" for="heldTower-field">
+										Удержал башню
+									</label>
+								</li>
+								<li class="information__progress-item">
+									<input class="information__checkbox visually-hidden" type="checkbox" 
+										name="trashedHotel" id="trashedHotel-field">
+									<label class="information__label-progress" for="trashedHotel-field">
+										Разгромил отель
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+
+					<div class="information__wrapper-contacts">
+						<fieldset class="information__contacts">
+							<legend class="information__legend-contacts">
+								Контактная информация
+							</legend>
+							<div class="information__contacts-flex">
+								<div class="information__contacts-item">
+									<label class="information__label-contacts" for="number-field">Номер телефона</label><br>
+									<input class="information__number" type="tel" name="number" id="number-field" 
+										pattern="[+]{1}[0-99]{1} [0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер (+* ***-***-**-**)">
+								</div>
+								<div class="information__contacts-item">
+									<label class="information__label-contacts" for="email-field">Адрес почты</label><br>
+									<input class="information__email" type="email" name="email" id="email-field" 
+										placeholder="Введите почту *" required>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					
+					<div class="information__wrapper-description">
+						<fieldset class="information__description">	
+							<legend class="information__legend-description">
+								<label for="description-field">
+									Опишите свои эмоции
+								</label>
+							</legend>
+							<textarea class="information__description-text" name="description" 
+								id="description-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+						</fieldset>
+					</div>
+					
+					<div class="information__wrapper-submit">
+						<button class="information__submit button" type="submit">Отправить форму</button>
+						<p class="information__required-field">
+							<span class="information__required-star">*</span> — обязательные 
+							<span class="information__required-desktop">для заполнения</span> поля
+						</p>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="page-footer page-footer--active">
+		<div class="page-footer__wrapper">
+			<a class="page-footer__logo" href="index.html">	
+				<svg class="page-footer__logo-icon" role="img" aria-labelledby="logo-footer" focusable="false" 
+					width="146.3" height="40.375">
+					<title id="logo-footer">Логотип сайта - Pink</title>
+					<use class="page-footer__logo-icon--mobile" xlink:href="#logo-pink-blue-mobile"></use>
+					<use class="page-footer__logo-icon--desktop" xlink:href="#logo-pink-blue-desktop"></use>
+				</svg>
+			</a>
+			<ul class="page-footer__social social-list">
+				<li class="social-list__item">
+					<a class="social-list__item-link" href="https://twitter.com" target="_blank" title="Twitter">
+						<img src="img/icon-twitter.svg" alt="Логотип - Twitter">
+						<span class="visually-hidden">Twitter</span>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__item-link" href="https://www.facebook.com" target="_blank" title="Facebook">
+						<img src="img/icon-facebook.svg" alt="Логотип - Facebook">
+						<span class="visually-hidden">Facebook</span>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__item-link" href="https://www.youtube.com" target="_blank" title="YouTube">
+						<img src="img/icon-youtube.svg" alt="Логотип - YouTube">
+						<span class="visually-hidden">YouTube</span>
+					</a>
+				</li>
+			</ul>
+			<p class="page-footer__copyright">
+				<b class="page-footer__copyright-title">Разработано для:</b> 
+				<a class="page-footer__copyright-link" href="https://htmlacademy.ru" target="_blank" title="HTML Academy">
+					<svg class="page-footer__copyright-img" role="img" aria-labelledby="copyright" focusable="false" 
+						width="26.943" height="34.09">
+						<title id="copyright">Логотип - HTML Academy</title>
+						<use class="page-footer__copyright-academy" xlink:href="#logo-htmlacademy"></use>
+					</svg>
+				</a>
+			</p>
+		</div>
+	</footer>
+
+	<script src="js/script-form.js"></script>
+</body>
+</html>
