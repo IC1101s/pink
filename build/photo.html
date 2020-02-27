@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="приложение, мобильное, фотографии, фото, для телефона">
 	<meta name="description" content="Мобильное приложение для фотографий">
-	<link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
-	<link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-	<link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="/fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.min.css">
 	<script src="js/modernizr-custom.js"></script>
 	<script src="js/picturefill.min.js"></script>
@@ -47,7 +47,7 @@
 						<a>Фотографии</a>
 					</li>
 					<li class="site-list__item">
-						<a href="#competition">Конкурс</a>
+						<a href="form.html">Конкурс</a>
 					</li>
 					<li class="site-list__item">
 						<a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
@@ -296,15 +296,17 @@
 								</svg>
 							</button>
 						</div>
-						<div class="editor__wrapper-range">
-							<input class="editor__range editor__range--crop" type="range" value="87">
-							<input class="editor__range editor__range--fill" type="range" value="10">
-							<input class="editor__range editor__range--contrast" type="range" value="50">
-						</div>
-						<div class="editor__button-wrapper-2">
-							<button class="editor__submit button" type="submit">Запостить</button>
-							<button class="editor__сancel button" type="button">Отмена</button>
-						</div>
+						<form action="https://echo.htmlacademy.ru" method="post">
+							<div class="editor__wrapper-range">
+								<input class="editor__range editor__range--crop" type="range" value="87">
+								<input class="editor__range editor__range--fill" type="range" value="10">
+								<input class="editor__range editor__range--contrast" type="range" value="50">
+							</div>
+							<div class="editor__button-wrapper-2">
+								<button class="editor__submit button" type="submit">Запостить</button>
+								<button class="editor__сancel button" type="button">Отмена</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
