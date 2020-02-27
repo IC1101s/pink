@@ -79,7 +79,7 @@
 					1000 миль на вашу бонусную карту!
 					<span class="information__title-span">Пожалуйста, заполните форму ниже:</span>
 				</p>
-				<form class="information__form" action="https://echo.htmlacademy.ru/" method="post">
+				<form class="information__form" action="https://echo.htmlacademy.ru/" method="post" target="_blank"> 
 					<div class="information__wrapper-desktop">
 						<fieldset class="information__full-name">
 							<legend class="information__legend-name visually-hidden">Ф.И.О.</legend>
@@ -217,7 +217,7 @@
 							<span class="information__required-desktop">для заполнения</span> поля
 						</p>
 					</div>
-				</form>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -265,6 +265,18 @@
 			</p>
 		</div>
 	</footer>
+
+	<!-- Popup-Submit -->
+	<section class="popup-submit">
+		<h2 class="popup-submit__title">Ваша заявка отправлена</h2>
+		<p class="popup-submit__text">
+			Спасибо за ваше участие, ваша заявка уже поступила к нам. 
+			В ближайшее время мы рассмотрим ее и оповестим вас.
+		</p>
+		<div class="popup-submit__close">
+			<button class="popup-submit__button button" type="submit">Закрыть окно</button>
+		</div>
+	</section>
 
 	<script src="js/script-form.js"></script>
 </body>
