@@ -24,3 +24,15 @@ mainToggle.addEventListener("click", function () {
 		captionTitle.classList.remove("caption__title--block");
 	}
 });
+
+var popupSubmit = document.querySelector(".popup-submit");
+var informationSubmit = document.querySelector(".information__submit");
+var popupSubmitBtn = document.querySelector(".popup-submit__button");
+
+informationSubmit.addEventListener("click", function () {
+	popupSubmit.classList.add("popup-submit--active");
+});
+
+popupSubmitBtn.addEventListener("click", function () {
+	popupSubmit.classList.remove("popup-submit--active");
+});
