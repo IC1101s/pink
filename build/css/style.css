@@ -281,6 +281,12 @@ input[type="radio"].visually-hidden {
   background-color: #283645;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .site-list a[href]:hover,
 .site-list a[href]:focus {
@@ -399,6 +405,12 @@ input[type="radio"].visually-hidden {
 }
 .application__download {
   margin-bottom: 30px;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .application__devices {
   margin: auto;
@@ -885,6 +897,12 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     color: #d22856;
     text-decoration: underline;
+    -webkit-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
   }
   .statistics__link:hover,
   .statistics__link:focus {
@@ -974,6 +992,12 @@ input[type="radio"].visually-hidden {
     border-top-width: 0;
     border-right-width: 0;
     background-color: transparent;
+    -webkit-transition-duration: 0.05s;
+            transition-duration: 0.05s;
+    -webkit-transition-property: border;
+    transition-property: border;
+    -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
   }
   .reviews__prev:hover,
   .reviews__next:hover,
@@ -1357,6 +1381,14 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   color: #d22856;
 }
+.contacts__letter-mail {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
 .contacts__letter-mail:hover,
 .contacts__letter-mail:focus {
   color: #283645;
@@ -1678,6 +1710,12 @@ input[type="radio"].visually-hidden {
   height: 45px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .social-list__item-link:hover,
 .social-list__item-link:focus {
@@ -1887,12 +1925,19 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #d22856;
   text-transform: uppercase;
+  outline: none;
   cursor: pointer;
   border: none;
   background-color: transparent;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: left 50%;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .photo__like:hover,
 .photo__like:focus {
@@ -2225,6 +2270,12 @@ input[type="radio"].visually-hidden {
   color: #d22856;
   border-color: #d22856;
   background-color: transparent;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .editor__submit:hover,
 .editor__submit:focus {
@@ -2240,6 +2291,12 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
   border-color: #283645;
   background-color: transparent;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: color, background-color, opacity;
+  transition-property: color, background-color, opacity;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .editor__сancel:hover,
 .editor__сancel:focus {
@@ -2435,12 +2492,20 @@ input[type="radio"].visually-hidden {
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: default;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .information__name-text:hover {
   border-color: #283645;
 }
 .information__name-text:focus {
   border-color: #d22856;
+  cursor: text;
 }
 .information__name {
   margin-bottom: 25px;
@@ -2500,6 +2565,12 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .information__checkbox:checked ~ .information__label-progress::after {
   content: "";
@@ -2563,6 +2634,13 @@ input[type="radio"].visually-hidden {
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: default;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .information__number:hover,
 .information__email:hover {
@@ -2571,6 +2649,7 @@ input[type="radio"].visually-hidden {
 .information__number:focus,
 .information__email:focus {
   border-color: #d22856;
+  cursor: text;
 }
 .information__wrapper-system {
   margin-bottom: 40px;
@@ -2617,6 +2696,12 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .information__system-radio:checked ~ .information__label-system::after {
   content: "";
@@ -2674,6 +2759,21 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   resize: none;
   overflow: auto;
+  cursor: default;
+  outline: none;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+.information__description-text:hover {
+  border-color: #283645;
+}
+.information__description-text:focus {
+  border-color: #d22856;
+  cursor: text;
 }
 .information__wrapper-submit {
   -webkit-box-ordinal-group: 7;
@@ -2689,6 +2789,12 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   border-radius: 5px;
   background-color: #2aab6d;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 .information__submit:hover,
 .information__submit:focus {
