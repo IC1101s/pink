@@ -9,6 +9,7 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var postcss = require("gulp-postcss");
 var imagemin = require("gulp-imagemin");
+var htmlmin = require("gulp-htmlmin");
 var svgstore = require("gulp-svgstore");
 var webp = require("gulp-webp");
 var posthtml = require("gulp-posthtml");
@@ -34,6 +35,7 @@ gulp.task("css", function () {
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
