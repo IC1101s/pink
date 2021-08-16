@@ -2130,6 +2130,7 @@ input[type="radio"].visually-hidden {
 .editor__image {
   padding-top: 20px;
   margin-bottom: 40px;
+  vertical-align: middle;
 }
 .editor__button-wrapper {
   margin-bottom: 30px;
@@ -2168,6 +2169,7 @@ input[type="radio"].visually-hidden {
 .editor__range {
   display: block;
   width: 240px;
+  height: 18px;
   margin: 0 auto;
   margin-bottom: 34px;
   background-color: transparent;
@@ -2201,8 +2203,8 @@ input[type="radio"].visually-hidden {
   background-color: #d22856;
 }
 .editor__range::-moz-range-thumb {
-  height: 14px;
-  width: 14px;
+  height: 10px;
+  width: 10px;
   cursor: pointer;
   border: 2px solid #d22856;
   border-radius: 50%;
@@ -2340,15 +2342,15 @@ input[type="radio"].visually-hidden {
     width: 202px;
     margin: 0;
     margin-left: auto;
-    padding-bottom: 34px;
-    padding-top: 36px;
+    padding-bottom: 23px;
+    padding-top: 25px;
     padding-right: 18px;
     padding-left: 55px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
     background-repeat: no-repeat;
   }
   .editor__range:first-child {
-    padding-top: 19px;
+    padding-top: 10px;
   }
   .editor__range:nth-child(2),
   .editor__range:nth-child(3) {
@@ -2370,7 +2372,7 @@ input[type="radio"].visually-hidden {
     background-position: 8px 50%;
   }
   .editor__button-wrapper-2 {
-    padding-top: 67px;
+    padding-top: 82px;
     padding-bottom: 0;
     text-align: center;
   }
@@ -2428,7 +2430,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 146px;
+    padding-top: 160px;
   }
   .editor__submit {
     margin-bottom: 0;
