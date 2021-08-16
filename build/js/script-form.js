@@ -26,10 +26,11 @@ mainToggle.addEventListener("click", function () {
 });
 
 var popupSubmit = document.querySelector(".popup-submit");
-var informationSubmit = document.querySelector(".information__submit");
+var informationSubmit = document.querySelector(".information__form");
 var popupSubmitBtn = document.querySelector(".popup-submit__button");
 
-informationSubmit.addEventListener("click", function () {
+informationSubmit.addEventListener("submit", function (evt) {
+	evt.preventDefault();
 	popupSubmit.classList.add("popup-submit--active");
 });
 
